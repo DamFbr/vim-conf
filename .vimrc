@@ -19,6 +19,8 @@ set rtp+=~/.vim/bundle/Vundle.vim       " Set the runtime path to include Vundle
 call vundle#begin()                     " Initialize Vundle
 Plugin 'VundleVim/Vundle.vim'           " Let Vundle manage Vundle, required
 
+" --------- Exploration
+Plugin 'scrooloose/nerdtree'            " The NERD Tree
 call vundle#end()                       " Terminate plugins initialization, required
 
 filetype plugin indent on               " Enable loading the plugin and indent files for specific file types, required
@@ -60,12 +62,4 @@ syntax enable                   " Allow syntax coloration
 "filetype on                     " Enable file type detection
 "filetype plugin on              " Enable loading the plugin files for specific file types
 "filetype indent on              " Enable loading the indent file for specific file types
-
-
-" --- VIM Plugin
-
-" ----- Solarized theme
-set background=dark             " Set dark background (change values of lines 303 - 304 in solarized.vim)
-let g:solarized_termcolors=256  " Ask Solarized to use the 256 standard colors' terminal emulator
-colorscheme solarized           " Activate Solarized colorscheme
 
