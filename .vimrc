@@ -40,3 +40,9 @@ filetype indent on              " Enable loading the indent file for specific fi
 
 
 " --- VIM Plugin
+
+" ----- Solarized theme
+set background=dark             " Set dark background 
+let g:solarized_termcolors=256  " Ask Solarized to use the 256 standard colors' terminal emulator
+colorscheme solarized           " Activate Solarized colorscheme
+
