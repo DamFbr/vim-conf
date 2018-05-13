@@ -41,6 +41,7 @@ set novisualbell                " Disable the screen's flash when an error occur
 "set t_vb=                      " Set empty to avoid beeping and flashing
 set hidden                      " Hide the buffers when differents files are opened
 set backspace=indent,eol,start  " Allow usual behavior for backspacing
+"set mouse=a			" Enable use of the mouse in all modes
 
 " ----- Display
 set title                       " Update window's or terminal's title
@@ -65,7 +66,7 @@ syntax enable                   " Allow syntax coloration
 
 " ----- Keys Mapping
 
-" ------- Disabling Directional Keys
+" Disabling Directional Keys
 map <up> <nop>
 map <down> <nop>
 map <right> <nop>
@@ -74,4 +75,8 @@ imap <up> <nop>
 imap <down> <nop>
 imap <right> <nop>
 imap <left> <nop>
+
+" Mapping ';;' with Escape key
+map ;; <Esc>
+imap ;; <Esc>
 
