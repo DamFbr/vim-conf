@@ -66,7 +66,14 @@ syntax enable                   " Allow syntax coloration
 
 " ----- Keys Mapping
 
-" Disabling Directional Keys
+" ------- Comfortable mapping for the basics
+let mapleader=","		" Define ',' key as Leader key
+
+" Mapping ';;' with Escape key
+map ;; <Esc>
+imap ;; <Esc>
+
+" Disabling directional keys
 map <up> <nop>
 map <down> <nop>
 map <right> <nop>
@@ -76,7 +83,8 @@ imap <down> <nop>
 imap <right> <nop>
 imap <left> <nop>
 
-" Mapping ';;' with Escape key
-map ;; <Esc>
-imap ;; <Esc>
+" ------- Search
+nnoremap <leader><ESC> :nohlsearch<CR><ESC>	" Clear the last search's highlighting
 
+" ------- The NERD Tree
+map <leader>n :NERDTreeToggle<CR>		" Toggle NERDTree window
