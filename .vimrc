@@ -63,3 +63,15 @@ syntax enable                   " Allow syntax coloration
 "filetype plugin on              " Enable loading the plugin files for specific file types
 "filetype indent on              " Enable loading the indent file for specific file types
 
+" ----- Keys Mapping
+
+" ------- Disabling Directional Keys
+map <up> <nop>
+map <down> <nop>
+map <right> <nop>
+map <left> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <right> <nop>
+imap <left> <nop>
+
