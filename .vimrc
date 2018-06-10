@@ -55,6 +55,7 @@ set ignorecase                  " Ignore letter case (when searching)
 set smartcase                   " Activate letter case sensitivity if search contains capital letter
 set incsearch                   " Underline search's result while typing
 set hlsearch                    " Underline search's result
+let @/=""			" Clean the last search's pattern (when resourcing vimrc file)
 
 "nnoremap <leader><ESC> :nohlsearch<return><ESC>    " Clear the last search's highlighting
 
