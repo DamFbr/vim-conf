@@ -86,5 +86,13 @@ imap <left> <nop>
 " ------- Search
 nnoremap <leader><ESC> :nohlsearch<CR><ESC>	" Clear the last search's highlighting
 
+" ------- Editing several files
+map <leader>t :tabnew<CR>           " Open a new tab-page (window)
+map <leader>> :tabnext<CR>          " Move to next tab-page
+map <leader>< :tabprevious<CR>      " Move to previous tab-page
+map <leader>s :split<CR>            " Split the tab-page horizontally
+map <leader>v :vsplit<CR>           " Split the tab-page vertically
+map <leader>b :bn<CR>               " Go to the next file (buffer) in buffer list
+
 " ------- The NERD Tree
 map <leader>n :NERDTreeToggle<CR>		" Toggle NERDTree window
