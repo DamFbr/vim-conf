@@ -21,6 +21,10 @@ Plugin 'VundleVim/Vundle.vim'           " Let Vundle manage Vundle, required
 
 " --------- Exploration
 Plugin 'scrooloose/nerdtree'            " The NERD Tree
+
+" --------- Edition
+Plugin 'tpope/vim-surround'		" Surround
+Plugin 'jiangmiao/auto-pairs'		" Auto-pairs
 call vundle#end()                       " Terminate plugins initialization, required
 
 filetype plugin indent on               " Enable loading the plugin and indent files for specific file types, required
