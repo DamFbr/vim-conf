@@ -25,6 +25,10 @@ Plugin 'scrooloose/nerdtree'            " The NERD Tree
 " --------- Edition
 Plugin 'tpope/vim-surround'		" Surround
 Plugin 'jiangmiao/auto-pairs'		" Auto-pairs
+
+" --------- Versioning
+Plugin 'airblade/vim-gitgutter'		" Git gutter
+Plugin 'tpope/vim-fugitive'		" Fugitive
 call vundle#end()                       " Terminate plugins initialization, required
 
 filetype plugin indent on               " Enable loading the plugin and indent files for specific file types, required
