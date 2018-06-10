@@ -25,6 +25,8 @@ Plugin 'scrooloose/nerdtree'            " The NERD Tree
 " --------- Edition
 Plugin 'tpope/vim-surround'		" Surround
 Plugin 'jiangmiao/auto-pairs'		" Auto-pairs
+Plugin 'justmao945/vim-clang'		" Clang
+Plugin 'octol/vim-cpp-enhanced-highlight' " C++ enhanced highlight
 
 " --------- Versioning
 Plugin 'airblade/vim-gitgutter'		" Git gutter
