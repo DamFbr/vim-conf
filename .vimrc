@@ -23,10 +23,12 @@ Plugin 'VundleVim/Vundle.vim'           " Let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree'            " The NERD Tree
 
 " --------- Edition
-Plugin 'tpope/vim-surround'		" Surround
-Plugin 'jiangmiao/auto-pairs'		" Auto-pairs
-Plugin 'justmao945/vim-clang'		" Clang
-Plugin 'octol/vim-cpp-enhanced-highlight' " C++ enhanced highlight
+Plugin 'tpope/vim-surround'			" Surround
+Plugin 'jiangmiao/auto-pairs'			" Auto-pairs
+Plugin 'justmao945/vim-clang'			" Clang
+Plugin 'octol/vim-cpp-enhanced-highlight' 	" C++ enhanced highlight
+Plugin 'davidhalter/jedi-vim'           	" Jedi
+Plugin 'andviro/flake8-vim'             	" Flake8
 
 " --------- Versioning
 Plugin 'airblade/vim-gitgutter'		" Git gutter
@@ -105,5 +107,13 @@ map <leader>s :split<CR>            " Split the tab-page horizontally
 map <leader>v :vsplit<CR>           " Split the tab-page vertically
 map <leader>b :bn<CR>               " Go to the next file (buffer) in buffer list
 
-" ------- The NERD Tree
+" ------- Plugins mapping
+
+" ----------- The NERD Tree
 map <leader>n :NERDTreeToggle<CR>		" Toggle NERDTree window
+
+" ----------- Jedi
+let g:jedi#usages_command='<leader>s'		" Avoid conflict with NERDTree mapping 
+"
+" ----------- Flake8
+let g:PyFlakeOnWrite = 1			" Auto-check file for errors on write (saving)
