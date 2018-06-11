@@ -55,6 +55,16 @@ set hidden                      " Hide the buffers when differents files are ope
 set backspace=indent,eol,start  " Allow usual behavior for backspacing
 "set mouse=a			" Enable use of the mouse in all modes
 
+" ------- Configuration respecting the Python PEP8 code style guide
+set encoding=utf-8      " Set encoding to UTF-8
+set textwidth=79        " Break lines longer than 79 columns, after whitespace
+set shiftwidth=4        " Indent/Unindent with 4 spaces for operation '>>' and '<<'
+set tabstop=4           " Display a 4 colums indentation when hitting Tabulation key
+set expandtab           " Insert appropriate number of spaces when hitting Tabulation key
+set softtabstop=4       " Insert/Delete 4 spaces when hitting a Tab/Backspace key
+set shiftround          " Round indent to multiple of 'shiftwidth'
+set autoindent          " Align the new line indent with the previous line
+
 " ----- Display
 set title                       " Update window's or terminal's title
 set number                      " Display lines' number
@@ -114,6 +124,6 @@ map <leader>n :NERDTreeToggle<CR>		" Toggle NERDTree window
 
 " ----------- Jedi
 let g:jedi#usages_command='<leader>s'		" Avoid conflict with NERDTree mapping 
-"
+
 " ----------- Flake8
 let g:PyFlakeOnWrite = 1			" Auto-check file for errors on write (saving)
