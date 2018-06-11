@@ -72,6 +72,14 @@ set ruler                       " Display cursor's actual position
 set wrap                        " Divide a too long line on several new lines
 set scrolloff=5                 " Display at least 5 lines around the cursor (for scrolling)
 
+" ------- Displaying whitespace at end of line
+highlight WhitespaceEOL ctermbg=black ctermfg=blue
+match WhitespaceEOL /\s\+$/
+
+" ------- Highlight respectively trailing whitepace and tabulations with the bullet character '•' and the arrow character '▸' (set encoding to UTF-8)
+set listchars=trail:•,tab:▸▸
+set list
+
 " ----- Search
 set ignorecase                  " Ignore letter case (when searching)
 set smartcase                   " Activate letter case sensitivity if search contains capital letter
